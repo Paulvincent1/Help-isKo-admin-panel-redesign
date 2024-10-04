@@ -1,0 +1,140 @@
+:root {
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.layout_admin {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+
+  background-color: #d9d9d9;
+}
+
+/* Sidebar */
+
+.sidebar {
+  background-color: white;
+  flex-basis: 200px;
+  border-radius: 10px;
+
+  padding: 20px;
+  /* color: ; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar nav ul li {
+  color: #3b3b3b;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar nav ul li a {
+  color: #3b3b3b;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.active {
+  color: #6bb577 !important;
+  position: relative;
+}
+
+.active::before {
+  content: "";
+  height: 100%;
+  width: 10px;
+  background-color: #6bb577;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.active-link {
+  color: #6bb577 !important;
+}
+
+/* Main content */
+
+.main_content {
+  flex: 1;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 100px;
+
+  gap: 20px;
+}
+
+.main_content header {
+  grid-column: 1 / span 2;
+  padding: 0 20px;
+  background-color: white;
+
+  border-radius: 10px;
+  /* height: 100px; */
+
+  display: flex;
+  align-items: center;
+}
+
+.employee-student_table {
+  display: grid;
+}
+
+.employee_table {
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+  border-bottom: 1px solid #d9d9d9;
+}
+.student_table {
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+}
+
+.main_content-data {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 2fr;
+}
+
+.main_content-data-card {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+
+  display: flex;
+}
+
+.chart-1 {
+  border-radius: 10px;
+  background-color: white;
+}
+/* .chart-2 {
+  border-radius: 10px;
+  background-color: white;
+} */
